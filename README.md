@@ -1,1 +1,1 @@
-https://github.com/AlexandreYASIN/portfolio-alex.git
+https://alexandreyasin.github.io/portfolio-alex/
