@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +49,6 @@ nav ul li a:hover {
   color: #00bcd4;
 }
 
-
 main {
   margin-top: 90px;
 }
@@ -71,7 +69,6 @@ section.active {
   from {opacity: 0; transform: translateY(20px);}
   to {opacity: 1; transform: translateY(0);}
 }
-
 
 h2 {
   color: #111;
@@ -105,31 +102,45 @@ h2 {
 }
 
 .card ul {
-  margin: 10px 0 10px 20px;
+  margin: 10px 0 10px 25px;
   line-height: 1.6;
 }
 
-.card ul li {
-  margin-bottom: 6px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.skills-container ul {
-  list-style: none;
-}
-
-.skills-container li {
-  background: #ececec;
+th, td {
+  border: 1px solid #ddd;
   padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
+  text-align: left;
 }
 
+th {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.info-table td:first-child,
+.competences-table td:first-child,
+.synthese-table td:first-child {
+  font-weight: bold;
+}
+
+.important-box {
+  background: #e8f9fc;
+  border-left: 5px solid #00bcd4;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.important-box h4 {
+  margin-bottom: 10px;
+  color: #007a91;
+}
 
 #contact a {
   color: #00bcd4;
@@ -137,41 +148,6 @@ h2 {
 }
 #contact a:hover {
   text-decoration: underline;
-}
-
-
-#veille {
-  background-color: #e7f5ff; 
-  border-radius: 12px;
-  padding: 60px 80px;
-  margin-top: 40px;
-}
-
-#veille h2 {
-  border-left-color: #00bcd4;
-  color: #003f63;
-}
-
-#veille .card {
-  border-left-color: #00bcd4;
-  background: #ffffff;
-}
-
-#epreuveE5 {
-  background-color: #fff3e0;
-  border-radius: 12px;
-  padding: 60px 80px;
-  margin-top: 40px;
-}
-
-#epreuveE5 h2 {
-  border-left-color: #ff9800;
-  color: #e65100;
-}
-
-#epreuveE5 .card {
-  border-left-color: #ff9800;
-  background: #ffffff;
 }
 
 footer {
