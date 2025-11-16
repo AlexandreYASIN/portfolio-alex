@@ -1,115 +1,35 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
-    line-height: 1.6;
-}
-nav {
-    background-color: #1e1e1e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    position: fixed;
+table.synthese {
     width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-nav h1 { font-size: 1.4em; letter-spacing: 1px; }
-nav ul { display: flex; list-style: none; }
-nav ul li { margin-left: 25px; }
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-nav ul li a:hover { color: #00bcd4; }
-
-main { margin-top: 90px; }
-
-section {
-    display: none;
-    padding: 60px 80px;
-    max-width: 1000px;
-    margin: auto;
-    animation: fadeIn 0.6s ease;
-}
-section.active { display: block; }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
 }
 
-h2 {
-    color: #111;
-    border-left: 4px solid #00bcd4;
-    padding-left: 10px;
-    margin-bottom: 20px;
+table.synthese caption {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 4px solid #00bcd4;
-    object-fit: cover;
-}
-.card {
-    background: #fff;
-    padding: 20px;
-    border-left: 5px solid #00bcd4;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-.card ul { margin: 10px 0 10px 20px; line-height: 1.6; }
-.card ul li { margin-bottom: 6px; }
-
-#experience ul { margin: 10px 0 10px 25px; list-style: disc; }
-#experience ul li { margin-bottom: 6px; }
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.skills-container ul { list-style: none; }
-.skills-container li {
-    background: #ececec;
+table.synthese th,
+table.synthese td {
+    border: 1px solid #ddd;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    vertical-align: top;
 }
 
-#contact a { color: #00bcd4; text-decoration: none; }
-#contact a:hover { text-decoration: underline; }
-
-footer {
-    background-color: #1e1e1e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+table.synthese thead {
+    background-color: #00bcd4;
+    color: #fff;
 }
 
-:target ~ main section { display: none; }
-:target { display: block; }
-#about:target,
-#experience:target,
-#education:target,
-#skills:target,
-#contact:target,
-#veille:target,
-#e5:target {
-    display: block;
+table.synthese tbody tr:nth-child(even) {
+    background-color: #f3f7f8;
+}
+
+.note-e5,
+.note-veille {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
 }
