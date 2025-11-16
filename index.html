@@ -6,232 +6,195 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Alexandre Yasin</div>
-        <nav>
-            <ul>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#experience">Expérience pro</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#veille">Veille technologique</a></li>
-                <li><a href="#e5">Épreuve orale E5</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
+<input type="radio" name="onglet" id="tab-accueil" checked>
+<input type="radio" name="onglet" id="tab-apropos">
+<input type="radio" name="onglet" id="tab-experience">
+<input type="radio" name="onglet" id="tab-formation">
+<input type="radio" name="onglet" id="tab-competences">
+<input type="radio" name="onglet" id="tab-veille">
+<input type="radio" name="onglet" id="tab-e5">
+<input type="radio" name="onglet" id="tab-contact">
+
+<header>
+    <div class="logo">Alexandre Yasin</div>
+    <nav>
+        <label for="tab-accueil">Accueil</label>
+        <label for="tab-apropos">À propos</label>
+        <label for="tab-experience">Expérience pro</label>
+        <label for="tab-formation">Formation</label>
+        <label for="tab-competences">Skills</label>
+        <label for="tab-veille">Veille techno</label>
+        <label for="tab-e5">Épreuve orale E5</label>
+        <label for="tab-contact">Contact</label>
+    </nav>
+</header>
+
+<section id="accueil" class="page">
+    <div class="hero">
         <div class="hero-text">
             <h1>Alexandre Yasin</h1>
             <h2>Étudiant en BTS SIO</h2>
-            <p>
-                Passionné par l’informatique, la technologie et la création numérique,
-                je prépare un BTS Services Informatiques aux Organisations et je
-                développe mes compétences techniques et professionnelles.
-            </p>
-            <a href="#contact" class="btn">Me contacter</a>
+            <p>Intéressé par l’informatique, la technologie et la création numérique.</p>
+            <label for="tab-apropos" class="btn">En savoir plus</label>
         </div>
         <div class="hero-photo">
-            <div class="photo-placeholder">Photo</div>
+            <div class="photo-rond">Photo</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="apropos" class="section">
-        <h2>À propos de moi</h2>
-        <div class="section-content two-columns">
-            <p>
-                Je m’appelle <strong>Alexandre Yasin</strong>, j’habite à Bobigny et je suis
-                actuellement étudiant en <strong>BTS SIO</strong> au lycée Charles de Foucauld (Paris 18ᵉ).
-                J’aime apprendre de nouvelles technologies, comprendre comment fonctionnent
-                les systèmes informatiques et créer des projets concrets.
-            </p>
-            <p>
-                Lors de mes expériences professionnelles, j’ai développé un <strong>fort sens des
-                responsabilités</strong>, le <strong>travail en équipe</strong>, l’<strong>autonomie</strong> et
-                l’<strong>organisation</strong>. Je m’intéresse aussi au game design, à la musique,
-                au montage vidéo et au graphisme.
-            </p>
-        </div>
-    </section>
+<section id="apropos" class="page">
+    <h2>À propos de moi</h2>
+    <div class="grid-2">
+        <p>
+            Je m’appelle Alexandre Yasin et j’habite à Bobigny. Je prépare un BTS Services
+            Informatiques aux Organisations au lycée Charles de Foucauld à Paris.
+        </p>
+        <p>
+            Je m’intéresse à l’IT, au game design, à la musique, au montage vidéo et au graphisme.
+            Mes expériences m’ont permis de développer le sens des responsabilités, le travail
+            en équipe, l’autonomie et l’organisation.
+        </p>
+    </div>
+</section>
 
-    <section id="experience" class="section">
-        <h2>Expérience professionnelle</h2>
+<section id="experience" class="page">
+    <h2>Expérience professionnelle</h2>
 
-        <div class="card">
-            <h3>Stagiaire – Production de sérigraphie</h3>
-            <p class="card-date">2023</p>
-            <p class="card-place">Entreprise de production d’objets sérigraphiés</p>
-            <ul>
-                <li>Participation à la production de supports imprimés.</li>
-                <li>Collaboration avec l’équipe de design pour la préparation des surfaces et la mise en page.</li>
-                <li>Utilisation et entretien du matériel de sérigraphie pour textiles et autres supports.</li>
-            </ul>
-        </div>
+    <div class="card">
+        <h3>Stagiaire – Production de sérigraphie</h3>
+        <p class="date">2023</p>
+        <p class="lieu">Production d’articles sérigraphiés</p>
+        <p>Participation à la production de supports imprimés et à la préparation des surfaces.</p>
+        <p>Collaboration avec l’équipe de design pour la mise en page des visuels.</p>
+        <p>Utilisation et entretien du matériel de sérigraphie pour textiles et autres supports.</p>
+    </div>
 
-        <div class="card">
-            <h3>Stagiaire – Administration de club sportif</h3>
-            <p class="card-date">2022</p>
-            <p class="card-place">Club sportif</p>
-            <ul>
-                <li>Gestion de données administratives et financières avec Excel.</li>
-                <li>Création et mise à jour de tableaux de suivi des adhérents.</li>
-                <li>Aide à la préparation de rapports et à l’organisation d’événements.</li>
-            </ul>
-        </div>
+    <div class="card">
+        <h3>Stagiaire – Administration de club sportif</h3>
+        <p class="date">2022</p>
+        <p class="lieu">Club sportif</p>
+        <p>Gestion de données administratives et financières avec Excel.</p>
+        <p>Mise à jour de tableaux de suivi des adhérents.</p>
+        <p>Aide à la préparation de rapports et à l’organisation d’événements.</p>
+    </div>
 
-        <div class="card">
-            <h3>Serveur – Restaurant chinois</h3>
-            <p class="card-date">2022 – 2025</p>
-            <p class="card-place">Restaurant chinois</p>
-            <ul>
-                <li>Accueil et service des clients dans un environnement dynamique.</li>
-                <li>Prise de commandes, livraison des plats et réponse aux demandes particulières.</li>
-                <li>Participation à la mise en place, au rangement et au maintien de la propreté de la salle.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="card">
+        <h3>Serveur – Restaurant chinois</h3>
+        <p class="date">2022 – 2025</p>
+        <p class="lieu">Restaurant chinois</p>
+        <p>Accueil et service des clients dans un environnement dynamique.</p>
+        <p>Prise de commandes, livraison des plats et gestion des demandes particulières.</p>
+        <p>Participation à la mise en place, au rangement et à la propreté de la salle.</p>
+    </div>
+</section>
 
-    <section id="formation" class="section">
-        <h2>Formation</h2>
+<section id="formation" class="page">
+    <h2>Formation</h2>
 
-        <div class="timeline">
-            <div class="timeline-item">
+    <div class="timeline">
+        <div class="etape">
+            <div class="pastille"></div>
+            <div class="contenu">
                 <h3>BTS SIO – Services Informatiques aux Organisations</h3>
-                <p class="card-date">2025 – 2027 (en cours)</p>
-                <p>Lycée Charles de Foucauld – Paris 18ᵉ</p>
-                <p>
-                    Le BTS SIO me permet de développer des compétences en support aux utilisateurs,
-                    administration de systèmes et développement d’applications.
-                </p>
+                <p class="date">2025 – 2027 (en cours)</p>
+                <p>Lycée Charles de Foucauld, Paris 18ᵉ</p>
+                <p>Apprentissage du support aux utilisateurs, de l’administration de systèmes et du développement d’applications.</p>
             </div>
+        </div>
 
-            <div class="timeline-item">
+        <div class="etape">
+            <div class="pastille"></div>
+            <div class="contenu">
                 <h3>Baccalauréat général – Mathématiques et LLCE</h3>
-                <p class="card-date">2022 – 2025</p>
-                <p>Lycée Saint-Joseph LaSalle – Pantin</p>
-                <p>
-                    Spécialités Mathématiques et Langues, Littératures et Cultures étrangères.
-                    Ce cursus m’a donné une bonne base scientifique et linguistique.
-                </p>
+                <p class="date">2022 – 2025</p>
+                <p>Lycée Saint-Joseph LaSalle, Pantin</p>
+                <p>Cursus avec spécialités Mathématiques et Langues, Littératures et Cultures étrangères.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="competences" class="section">
-        <h2>Compétences</h2>
-        <div class="section-content three-columns">
-            <div>
-                <h3>Compétences techniques</h3>
-                <ul>
-                    <li>Initiation à la programmation (Scratch, bases d’algorithmes).</li>
-                    <li>Suite bureautique : PowerPoint, OpenOffice / Excel.</li>
-                    <li>Montage vidéo (Vegas) et retouche d’images (Photoshop).</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Qualités personnelles</h3>
-                <ul>
-                    <li>Sens des responsabilités.</li>
-                    <li>Travail en équipe.</li>
-                    <li>Autonomie.</li>
-                    <li>Organisation.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Langues</h3>
-                <ul>
-                    <li>Français : courant.</li>
-                    <li>Anglais : courant.</li>
-                    <li>Chinois : courant.</li>
-                    <li>Espagnol : intermédiaire.</li>
-                </ul>
-            </div>
+<section id="competences" class="page">
+    <h2>Skills</h2>
+    <div class="grid-3">
+        <div class="bloc">
+            <h3>Compétences techniques</h3>
+            <p>Initiation à la programmation avec Scratch et aux bases de l’algorithmique.</p>
+            <p>Maîtrise des outils bureautiques : PowerPoint, OpenOffice et Excel.</p>
+            <p>Montage vidéo avec Vegas et retouche d’images avec Photoshop.</p>
         </div>
-    </section>
-
-    <section id="veille" class="section">
-        <h2>Veille technologique : Sécurité des mots de passe et authentification</h2>
-        <div class="section-content">
-            <p>
-                Pour ma veille technologique, je m’intéresse à la <strong>cybersécurité des mots de passe
-                et à l’authentification multi-facteur (MFA)</strong>. La majorité des attaques informatiques
-                commencent par le vol d’identifiants peu sécurisés (mot de passe trop simple, réutilisé,
-                ou stocké sans protection).
-            </p>
-            <p>
-                Les principaux axes de ma veille sont :
-            </p>
-            <ul>
-                <li>Les bonnes pratiques pour créer et gérer des mots de passe robustes.</li>
-                <li>L’utilisation de gestionnaires de mots de passe pour les particuliers et les entreprises.</li>
-                <li>Le déploiement de l’authentification multi-facteur (MFA) : SMS, applications d’authentification, clés physiques.</li>
-                <li>L’évolution vers des solutions « passwordless » (connexion sans mot de passe).</li>
-            </ul>
-            <p>
-                Cette veille est en lien direct avec le BTS SIO, car la sécurité des comptes utilisateurs
-                est essentielle dans tout système d’information. Je mets régulièrement à jour cette page
-                avec des articles, outils ou exemples rencontrés pendant ma formation.
-            </p>
+        <div class="bloc">
+            <h3>Qualités</h3>
+            <p>Sens des responsabilités</p>
+            <p>Esprit d’équipe</p>
+            <p>Autonomie</p>
+            <p>Organisation</p>
         </div>
-    </section>
-
-    <section id="e5" class="section">
-        <h2>Épreuve orale E5 – Parcours de professionnalisation</h2>
-        <div class="section-content">
-            <p>
-                L’<strong>épreuve E5 du BTS SIO</strong> est une épreuve orale qui permet d’évaluer la
-                manière dont l’étudiant construit son parcours professionnel et mobilise ses compétences.
-                Elle s’appuie sur les expériences en entreprise, les projets réalisés au cours de la formation
-                et la veille technologique.
-            </p>
-            <p>
-                Dans le cadre de cette épreuve, je dois notamment :
-            </p>
-            <ul>
-                <li>Présenter mon parcours, mes stages et les missions réalisées.</li>
-                <li>Montrer les compétences techniques et organisationnelles acquises.</li>
-                <li>Expliquer ma veille technologique sur la sécurité des mots de passe et la MFA.</li>
-                <li>Mettre en avant mon projet professionnel à court et moyen terme.</li>
-            </ul>
-            <p>
-                Ce portfolio me sert de support pour l’E5 : il regroupe mes expériences, mes formations,
-                mes compétences, ainsi que les éléments de veille et les documents de synthèse que je
-                compléterai au fur et à mesure.
-            </p>
+        <div class="bloc">
+            <h3>Langues</h3>
+            <p>Français courant</p>
+            <p>Anglais courant</p>
+            <p>Chinois courant</p>
+            <p>Espagnol intermédiaire</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="section section-contact">
-        <h2>Contact</h2>
-        <div class="section-content two-columns">
-            <div>
-                <h3>Coordonnées</h3>
-                <p><strong>Téléphone :</strong> +33 7 61 66 34 12</p>
-                <p><strong>Email :</strong> alexandreyasin06@gmail.com</p>
-                <p><strong>Adresse :</strong> 27 Rue du Pré Souverain, 93000 Bobigny, France</p>
-            </div>
-            <div>
-                <h3>Formulaire (exemple)</h3>
-                <form>
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+<section id="veille" class="page">
+    <h2>Veille technologique : sécurité des mots de passe</h2>
+    <div class="texte-large">
+        <p>
+            Ma veille technologique porte sur la sécurité des mots de passe et l’authentification
+            multi-facteur. De nombreuses attaques commencent par le vol d’identifiants simples ou
+            réutilisés sur plusieurs sites.
+        </p>
+        <p>
+            Je m’intéresse aux bonnes pratiques pour créer des mots de passe robustes, aux
+            gestionnaires de mots de passe pour les particuliers et les organisations, et aux
+            différentes formes d’authentification multi-facteur.
+        </p>
+        <p>
+            Je suis aussi l’arrivée de solutions de connexion sans mot de passe. Ce sujet est en
+            lien direct avec le BTS SIO, car la protection des comptes utilisateurs est centrale
+            dans un système d’information.
+        </p>
+    </div>
+</section>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="votre.email@example.com">
+<section id="e5" class="page">
+    <h2>Épreuve orale E5</h2>
+    <div class="texte-large">
+        <p>
+            L’épreuve E5 du BTS SIO évalue mon parcours de professionnalisation. Elle s’appuie sur
+            mes stages, mes emplois, mes projets réalisés durant la formation et ma veille
+            technologique.
+        </p>
+        <p>
+            Pendant l’oral, je présente mon parcours, les missions effectuées en entreprise et les
+            compétences techniques et organisationnelles développées. Je mets en avant ma veille
+            sur la sécurité des mots de passe et l’authentification multi-facteur.
+        </p>
+        <p>
+            Ce portfolio sert de support à cette épreuve et regroupe mes expériences, ma formation,
+            mes compétences ainsi que les documents de synthèse que j’ajouterai au fur et à mesure.
+        </p>
+    </div>
+</section>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Votre message..."></textarea>
+<section id="contact" class="page">
+    <h2>Contact</h2>
+    <div class="texte-large">
+        <p>Téléphone : +33 7 61 66 34 12</p>
+        <p>Email : alexandreyasin06@gmail.com</p>
+        <p>Adresse : 27 Rue du Pré Souverain, 93000 Bobigny, France</p>
+    </div>
+</section>
 
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 - Portfolio Alexandre Yasin</p>
-    </footer>
+<footer>
+    <p>© 2025 – Alexandre Yasin</p>
+</footer>
 
 </body>
 </html>
