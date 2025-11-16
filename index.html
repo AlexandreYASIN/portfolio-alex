@@ -7,193 +7,112 @@
 </head>
 <body>
 
-<input type="radio" name="onglet" id="tab-accueil" checked>
-<input type="radio" name="onglet" id="tab-apropos">
-<input type="radio" name="onglet" id="tab-experience">
-<input type="radio" name="onglet" id="tab-formation">
-<input type="radio" name="onglet" id="tab-competences">
-<input type="radio" name="onglet" id="tab-veille">
-<input type="radio" name="onglet" id="tab-e5">
-<input type="radio" name="onglet" id="tab-contact">
-
 <header>
     <div class="logo">Alexandre Yasin</div>
     <nav>
-        <label for="tab-accueil">Accueil</label>
-        <label for="tab-apropos">À propos</label>
-        <label for="tab-experience">Expérience pro</label>
-        <label for="tab-formation">Formation</label>
-        <label for="tab-competences">Skills</label>
-        <label for="tab-veille">Veille techno</label>
-        <label for="tab-e5">Épreuve orale E5</label>
-        <label for="tab-contact">Contact</label>
+        <a href="#apropos">À propos</a>
+        <a href="#experience">Expérience</a>
+        <a href="#formation">Formation</a>
+        <a href="#skills">Skills</a>
+        <a href="#veille">Veille</a>
+        <a href="#e5">Épreuve E5</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section id="accueil" class="page">
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Alexandre Yasin</h1>
-            <h2>Étudiant en BTS SIO</h2>
-            <p>Intéressé par l’informatique, la technologie et la création numérique.</p>
-            <label for="tab-apropos" class="btn">En savoir plus</label>
-        </div>
-        <div class="hero-photo">
-            <div class="photo-rond">Photo</div>
-        </div>
+<section class="banniere">
+    <div class="texte">
+        <h1>Alexandre Yasin</h1>
+        <h2>Étudiant BTS SIO</h2>
+        <p>Passionné par l'informatique, la technologie et le numérique.</p>
+        <a href="#apropos" class="btn">En savoir plus</a>
+    </div>
+    <div class="image">
+        <div class="photo"></div>
     </div>
 </section>
 
-<section id="apropos" class="page">
+<section id="apropos" class="section">
     <h2>À propos de moi</h2>
-    <div class="grid-2">
-        <p>
-            Je m’appelle Alexandre Yasin et j’habite à Bobigny. Je prépare un BTS Services
-            Informatiques aux Organisations au lycée Charles de Foucauld à Paris.
-        </p>
-        <p>
-            Je m’intéresse à l’IT, au game design, à la musique, au montage vidéo et au graphisme.
-            Mes expériences m’ont permis de développer le sens des responsabilités, le travail
-            en équipe, l’autonomie et l’organisation.
-        </p>
-    </div>
+    <p>Je m'appelle Alexandre Yasin, étudiant en BTS SIO et passionné par l'informatique. Je suis motivé, autonome, organisé et j'aime apprendre de nouvelles technologies. Je m’intéresse aussi au game design, au montage vidéo, à la musique et au graphisme.</p>
 </section>
 
-<section id="experience" class="page">
+<section id="experience" class="section">
     <h2>Expérience professionnelle</h2>
 
     <div class="card">
         <h3>Stagiaire – Production de sérigraphie</h3>
-        <p class="date">2023</p>
-        <p class="lieu">Production d’articles sérigraphiés</p>
-        <p>Participation à la production de supports imprimés et à la préparation des surfaces.</p>
-        <p>Collaboration avec l’équipe de design pour la mise en page des visuels.</p>
-        <p>Utilisation et entretien du matériel de sérigraphie pour textiles et autres supports.</p>
+        <p>2023</p>
+        <p>Participation à la production et préparation des surfaces. Travail avec l’équipe design et utilisation du matériel de sérigraphie.</p>
     </div>
 
     <div class="card">
         <h3>Stagiaire – Administration de club sportif</h3>
-        <p class="date">2022</p>
-        <p class="lieu">Club sportif</p>
-        <p>Gestion de données administratives et financières avec Excel.</p>
-        <p>Mise à jour de tableaux de suivi des adhérents.</p>
-        <p>Aide à la préparation de rapports et à l’organisation d’événements.</p>
+        <p>2022</p>
+        <p>Gestion de données avec Excel, création de tableaux de suivi et aide à l'organisation d’événements.</p>
     </div>
 
     <div class="card">
         <h3>Serveur – Restaurant chinois</h3>
-        <p class="date">2022 – 2025</p>
-        <p class="lieu">Restaurant chinois</p>
-        <p>Accueil et service des clients dans un environnement dynamique.</p>
-        <p>Prise de commandes, livraison des plats et gestion des demandes particulières.</p>
-        <p>Participation à la mise en place, au rangement et à la propreté de la salle.</p>
+        <p>2022 – 2025</p>
+        <p>Service, prise de commandes, gestion des demandes clients et maintien de la propreté de la salle.</p>
     </div>
 </section>
 
-<section id="formation" class="page">
+<section id="formation" class="section">
     <h2>Formation</h2>
 
-    <div class="timeline">
-        <div class="etape">
-            <div class="pastille"></div>
-            <div class="contenu">
-                <h3>BTS SIO – Services Informatiques aux Organisations</h3>
-                <p class="date">2025 – 2027 (en cours)</p>
-                <p>Lycée Charles de Foucauld, Paris 18ᵉ</p>
-                <p>Apprentissage du support aux utilisateurs, de l’administration de systèmes et du développement d’applications.</p>
-            </div>
-        </div>
+    <div class="card">
+        <h3>BTS SIO</h3>
+        <p>2025 – 2027</p>
+        <p>Lycée Charles de Foucauld – Paris 18e.</p>
+    </div>
 
-        <div class="etape">
-            <div class="pastille"></div>
-            <div class="contenu">
-                <h3>Baccalauréat général – Mathématiques et LLCE</h3>
-                <p class="date">2022 – 2025</p>
-                <p>Lycée Saint-Joseph LaSalle, Pantin</p>
-                <p>Cursus avec spécialités Mathématiques et Langues, Littératures et Cultures étrangères.</p>
-            </div>
-        </div>
+    <div class="card">
+        <h3>Baccalauréat général – Maths / LLCE</h3>
+        <p>2022 – 2025</p>
+        <p>Lycée Saint-Joseph LaSalle – Pantin.</p>
     </div>
 </section>
 
-<section id="competences" class="page">
+<section id="skills" class="section">
     <h2>Skills</h2>
-    <div class="grid-3">
-        <div class="bloc">
-            <h3>Compétences techniques</h3>
-            <p>Initiation à la programmation avec Scratch et aux bases de l’algorithmique.</p>
-            <p>Maîtrise des outils bureautiques : PowerPoint, OpenOffice et Excel.</p>
-            <p>Montage vidéo avec Vegas et retouche d’images avec Photoshop.</p>
+
+    <div class="grille">
+        <div class="skill-box">
+            <h3>Techniques</h3>
+            <p>Scratch, PowerPoint, Excel, Photoshop, Vegas.</p>
         </div>
-        <div class="bloc">
+        <div class="skill-box">
             <h3>Qualités</h3>
-            <p>Sens des responsabilités</p>
-            <p>Esprit d’équipe</p>
-            <p>Autonomie</p>
-            <p>Organisation</p>
+            <p>Autonomie, organisation, responsabilité, travail en équipe.</p>
         </div>
-        <div class="bloc">
+        <div class="skill-box">
             <h3>Langues</h3>
-            <p>Français courant</p>
-            <p>Anglais courant</p>
-            <p>Chinois courant</p>
-            <p>Espagnol intermédiaire</p>
+            <p>Français, Anglais, Chinois, Espagnol.</p>
         </div>
     </div>
 </section>
 
-<section id="veille" class="page">
-    <h2>Veille technologique : sécurité des mots de passe</h2>
-    <div class="texte-large">
-        <p>
-            Ma veille technologique porte sur la sécurité des mots de passe et l’authentification
-            multi-facteur. De nombreuses attaques commencent par le vol d’identifiants simples ou
-            réutilisés sur plusieurs sites.
-        </p>
-        <p>
-            Je m’intéresse aux bonnes pratiques pour créer des mots de passe robustes, aux
-            gestionnaires de mots de passe pour les particuliers et les organisations, et aux
-            différentes formes d’authentification multi-facteur.
-        </p>
-        <p>
-            Je suis aussi l’arrivée de solutions de connexion sans mot de passe. Ce sujet est en
-            lien direct avec le BTS SIO, car la protection des comptes utilisateurs est centrale
-            dans un système d’information.
-        </p>
-    </div>
+<section id="veille" class="section">
+    <h2>Veille technologique</h2>
+    <p>Ma veille porte sur la sécurité des mots de passe et l’authentification multi-facteur. Je m’intéresse aux bonnes pratiques, aux gestionnaires de mots de passe et aux nouvelles méthodes de connexion sans mot de passe.</p>
 </section>
 
-<section id="e5" class="page">
+<section id="e5" class="section">
     <h2>Épreuve orale E5</h2>
-    <div class="texte-large">
-        <p>
-            L’épreuve E5 du BTS SIO évalue mon parcours de professionnalisation. Elle s’appuie sur
-            mes stages, mes emplois, mes projets réalisés durant la formation et ma veille
-            technologique.
-        </p>
-        <p>
-            Pendant l’oral, je présente mon parcours, les missions effectuées en entreprise et les
-            compétences techniques et organisationnelles développées. Je mets en avant ma veille
-            sur la sécurité des mots de passe et l’authentification multi-facteur.
-        </p>
-        <p>
-            Ce portfolio sert de support à cette épreuve et regroupe mes expériences, ma formation,
-            mes compétences ainsi que les documents de synthèse que j’ajouterai au fur et à mesure.
-        </p>
-    </div>
+    <p>L’épreuve E5 présente mon parcours, mes expériences professionnelles, mes compétences et ma veille technologique. Ce portfolio me sert de support pour structurer et présenter l’ensemble de mon travail.</p>
 </section>
 
-<section id="contact" class="page">
+<section id="contact" class="section">
     <h2>Contact</h2>
-    <div class="texte-large">
-        <p>Téléphone : +33 7 61 66 34 12</p>
-        <p>Email : alexandreyasin06@gmail.com</p>
-        <p>Adresse : 27 Rue du Pré Souverain, 93000 Bobigny, France</p>
-    </div>
+    <p>Téléphone : 07 61 66 34 12</p>
+    <p>Email : alexandreyasin06@gmail.com</p>
+    <p>Adresse : 27 Rue du Pré Souverain, Bobigny</p>
 </section>
 
 <footer>
-    <p>© 2025 – Alexandre Yasin</p>
+    <p>© 2025 - Alexandre Yasin</p>
 </footer>
 
 </body>
